@@ -4,7 +4,7 @@
       name='appname-vite'
       :url='url'
       inline
-      disablesandbox
+      iframe
       :data='microAppData'
       @created='handleCreate'
       @beforemount='handleBeforeMount'

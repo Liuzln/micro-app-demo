@@ -8,33 +8,6 @@ const routes: Array<RouteRecordRaw> = [
     component: Home
   },
   {
-    path: '/app-angular11/:page*',
-    name: 'app-angular11',
-    component: () => import('./views/angular11.vue'),
-  },
-  {
-    path: '/app-nextjs11/:page*',
-    name: 'app-nextjs11',
-    component: () => import('./views/nextjs11.vue'),
-  },
-  {
-    path: '/app-nuxtjs2/:page*',
-    name: 'app-nuxtjs2',
-    component: () => import('./views/nuxtjs2.vue'),
-  },
-  {
-    path: '/app-react16/:page*',
-    name: 'app-react16',
-    component: () => import('./views/react16.vue'),
-  },
-  {
-    // 因为主应用为history路由，appname-react17子应用是hash路由，这里配置略微不同
-    // 已解决带参数时页面丢失的问题
-    path: '/app-react17:page*',
-    name: 'app-react17',
-    component: () => import('./views/react17.vue'),
-  },
-  {
     // 因为主应用为history路由，appname-vite子应用是hash路由，这里配置略微不同
     // 已解决带参数时页面丢失的问题
     path: '/app-vite:page*',

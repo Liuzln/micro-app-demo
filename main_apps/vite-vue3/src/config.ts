@@ -1,11 +1,6 @@
 
 // 开发环境地址
 const config: Record<string, string> = {
-  angular11: 'http://localhost:4001',
-  nextjs11: 'http://localhost:4002',
-  nuxtjs2: 'http://localhost:4003',
-  react16: 'http://localhost:4004',
-  react17: 'http://localhost:4005',
   sidebar: 'http://localhost:4006',
   vite: 'http://localhost:4007',
   vue2: 'http://localhost:4008',
@@ -19,10 +14,10 @@ if (process.env.NODE_ENV === 'production') {
     config[key] = window.location.origin
   })
 
-  // 在部署后，nextjs11和nuxtjs2依然和开发环境保持一致，绑定5006和6006端口，这里单独处理
-  const { protocol, hostname } = window.location
-  config.nextjs11 = `${protocol}//${hostname}:5006`
-  config.nuxtjs2 = `${protocol}//${hostname}:6006`
+  // // 在部署后，nextjs11和nuxtjs2依然和开发环境保持一致，绑定5006和6006端口，这里单独处理
+  // const { protocol, hostname } = window.location
+  // config.nextjs11 = `${protocol}//${hostname}:5006`
+  // config.nuxtjs2 = `${protocol}//${hostname}:6006`
 }
 
 // if (true) {
